@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetResultActivity">
+    tools:context=".SetResultActivity">
 
     <TextView
+        android:id="@+id/get_information_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Information"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/result_textView"/>
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/result_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="TextView"
+        android:hint="Set Result"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +34,10 @@
         android:id="@+id/result_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GO TO SET RESULT PAGE"
+        android:text="SET RESULT"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result_textView"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
